@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="registro.css">
+    <script type="text/javascript" src="registro.js"></script>
+</head>
+<body>
+    <!--  Nombre, apellido, email, telefono, contraseña,  -->
+    <form id="miFormulario" onsubmit="validarFormulario()" method="post">
+
+        <label>Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label>Apellidos</label>
+        <input type="text" id="apellido" name="apellido">
+
+        <label>Email</label>
+        <input type="text" id="email" name="email">
+
+        <label>Telefono</label>
+        <input type="text" id="telefono" name="telefono">
+
+        <label>Dni</label>
+        <input type="text" id="dni" name="dni">
+
+        <label>Contraseña</label>
+        <input type="password" id="passwd" name="passwd" required>
+
+        <label>Confirma contraseña</label>
+        <input type="password" id="cpasswd" name="cpasswd" required>
+        <span id="passwordError" style="color: red;"></span>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
