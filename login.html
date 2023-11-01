@@ -1,31 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio de sesión.</title>
-    <script src="login.js"></script>
+    <script src="https://kit.fontawesome.com/e0e90ab27b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/registro.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <title>Registro</title>
+    <header class="header">
+        <a href="home.html">
+            <img id="logo-menu" src="logo2.png" alt="logo del restaurante" class="logo"><a href="home.html" class="logo"></a>
+        </a>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a id="a-menu" href="home.html">Inicio</a></li>
+          <li><a id="a-menu" href="contacto.html">Contacto</a></li>
+          <li><a id="a-menu" href="registro.html">Registro</a></li>
+          <li><a id="a-menu" href="login.html">Login</a></li>
+        </ul>
+      </header>
 </head>
 
 <body>
-    <div>
-        <form action="">
-            <h1>Inicie sesión</h1>
+    <div class="form-sesion">
+        <form id="form-sesion-user" action="">
+            <h3>Inicie sesión</h3>
             <div>
                 <label for="">Usuario</label>
                 <div>
-                    <input type="text" placeholder="Nombre de usuario" id="usuario">
+                    <input class="input-form-registro" type="text" placeholder="Indroduzca su nombre de usuario" id="usuario" name="nombre">
                 </div>
                 <label for="">Contraseña</label>
                 <div>
-                    <input type="password" placeholder="Indroduzca su Contraseña" id="password">
+                    <input class="input-form-registro" type="password" placeholder="Indroduzca su Contraseña" id="password" name="passwd" required>
                 </div>
-                <button class="botton" type="submit" onclick="inicio()">Enviar</button>
-                <p>¿No tienes cuenta?<a href="registro.html"> Crea tu cuenta aquí</a></p>
+                <button class="boton-enviar" type="submit" onclick="inicio()">Enviar</button>
+                <p>¿No tienes cuenta?<a id="enlace-login" href="registro.html"> Crea tu cuenta aquí</a></p>
+                <p>¿Olvidaste tu contraseña?<a id="enlace-login" href="contacto.html"> Accede aquí</a></p>
             </div>
         </form>
     </div>
 </body>
+<footer class="foo">
+    <div class="foo-container">
+        <div class="foo-container-cont1">
+            <p><a href="home.html">Aviso Legal</a></p>
+            <p><a href="home.html">Política de Cookies</a></p>
+            <p><a href="home.html">Política de Privacidad</a></p>
+        </div>
+        <div class="foo-container-cont2">
+            <p><a href="home.html">Home</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+            <p><a href="login.html">Login</a></p>
+        </div>
+        <div class="foo-container-cont3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</footer>
 
 </html>

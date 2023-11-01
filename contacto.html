@@ -1,27 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Formulario de Contacto</title>
-    <link rel="stylesheet" type="text/css" href="contacto.css">
+    <link rel="stylesheet" type="text/css" href="css/contacto.css">
+    <script src="contacto.js"></script>
+    <script src="https://kit.fontawesome.com/e0e90ab27b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/registro.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script type="text/javascript" src="js/registro.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <header class="header">
+        <a href="home.html">
+            <img id="logo-menu" src="logo2.png" alt="logo del restaurante" class="logo"><a href="home.html" class="logo"></a>
+        </a>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a id="a-menu" href="home.html">Inicio</a></li>
+          <li><a id="a-menu" href="contacto.html">Contacto</a></li>
+          <li><a id="a-menu" href="registro.html">Registro</a></li>
+          <li><a id="a-menu" href="login.html">Login</a></li>
+        </ul>
+      </header>
 </head>
 <body>
 
 <h2>Contacto</h2>
+<h3>¡Localízanos!</h3>
+<div class="form-contacto">
+    <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input class="input-form-contacto" type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="email">Correo Electrónico:</label>
+        <input class="input-form-contacto" type="email" id="email" name="email" required><br><br>
+    
+        <label for="mensaje">Mensaje:</label>
+        <textarea class="input-form-contacto" id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
+    
+        <input class="boton-enviar" type="submit" value="Enviar">
+    </form>
+</div>
 
-<form id="contactForm">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" required><br><br>
-
-    <label for="email">Correo Electrónico:</label>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-
-    <input type="submit" value="Enviar">
-</form>
-
-<script src="contacto.js"></script>
 
 </body>
+
+<footer class="foo">
+    <div class="foo-container">
+        <div class="foo-container-cont1">
+            <p><a href="home.html">Aviso Legal</a></p>
+            <p><a href="home.html">Política de Cookies</a></p>
+            <p><a href="home.html">Política de Privacidad</a></p>
+        </div>
+        <div class="foo-container-cont2">
+            <p><a href="home.html">Home</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+            <p><a href="login.html">Login</a></p>
+        </div>
+        <div class="foo-container-cont3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</footer>
 </html>
