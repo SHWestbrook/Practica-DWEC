@@ -22,25 +22,13 @@ label {
     margin-bottom: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
+
+.input-form-contacto {
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
 
-input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
 
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0A3143;
+    width: 100%;
+}
+
+#logo-menu:hover{
+    background-color: #0F3E54;
+}
+
+.header .menu{
+    transition: max-height .2s ease-out;
+}
+
+.header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #0A3143;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .header li:hover{
+    background-color: #0F3E54 ;
+  } 
+
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    color: #D4E6F1;
+    text-decoration: none;
+  }
+
+  .body-p {
+    max-width: 100%;
+    padding: 70px;
+    color: #0A3143;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #0A3143;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #0F3E54;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;;
+    text-align: center;
+    color: #0056b3;
+}
+
+.img-logo{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-pollo-chef{
+    width: 30%;
+}
+
+.img-carta{
+   display: block;
+   margin:auto;
+   padding-bottom: 40px;
+}
+
+
+.home-welcome{
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.body-info-div {
+    position: relative;
+    margin-bottom: 50px;;
+    
+}
+
+.home-body-info1 {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: end;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #0F3E54;
+}
+
+.home-body-info2 {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align:right;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #0F3E54;
+}
+
+.p-info2{
+    padding-right: 20px;
+}
+
+.plato1 {
+    width: 20%;
+}
+
+.plato2 {
+    width: 20%;
+}
+
+.foo-container{
+    background-color: #0F3E54;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.foo-container-cont3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fa-brands{
+    padding: 20%;
+}
+
+.fa-brands:hover{
+    background-color: #0A3143;
+}
+
+.logo{
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+    padding:3px;
+}
+
+a {
+    color: black;
+    text-decoration:none; 
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+#a-menu :hover{
+    color: #D4E6F1;
+}

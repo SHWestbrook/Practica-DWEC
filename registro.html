@@ -2,37 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <script src="https://kit.fontawesome.com/e0e90ab27b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/registro.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script type="text/javascript" src="js/registro.js"></script>
+    <title>Registro</title>
+    <header class="header">
+        <a href="home.html">
+            <img id="logo-menu" src="logo2.png" alt="logo del restaurante" class="logo"><a href="home.html" class="logo"></a>
+        </a>
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a id="a-menu" href="home.html">Inicio</a></li>
+          <li><a id="a-menu" href="contacto.html">Contacto</a></li>
+          <li><a id="a-menu" href="registro.html">Registro</a></li>
+          <li><a id="a-menu" href="login.html">Login</a></li>
+        </ul>
+      </header>
 </head>
 <body>
     <!--  Nombre, apellido, email, telefono, contraseña,  -->
-    <form id="miFormulario" onsubmit="validarFormulario()" method="post">
+    <div>
+        <h2>¡Regístrate y consigue tu mesa antes que nadie!</h2>
+    </div>
+    <div class="form-registro">
+        <form id="miFormulario" onsubmit="validarFormulario()" method="post">
 
-        <label>Nombre</label>
-        <input type="text" id="nombre" name="nombre">
+            <label>Nombre</label>
+            <input class="input-form-registro" type="text" id="nombre" name="nombre">
+    
+            <label>Apellidos</label>
+            <input class="input-form-registro" type="text" id="apellido" name="apellido">
+    
+            <label>Email</label>
+            <input class="input-form-registro" type="text" id="email" name="email">
+    
+            <label>Telefono</label>
+            <input class="input-form-registro" type="text" id="telefono" name="telefono">
+    
+            <label>Dni</label>
+            <input class="input-form-registro" type="text" id="dni" name="dni">
+    
+            <label>Contraseña</label>
+            <input class="input-form-registro" type="password" id="passwd" name="passwd" required>
+    
+            <label>Confirma contraseña</label>
+            <input class="input-form-registro" type="password" id="cpasswd" name="cpasswd" required>
+            <span id="passwordError" style="color: red;"></span>
+    
+            <input class="boton-enviar" type="submit" value="Enviar">
+        </form>
 
-        <label>Apellidos</label>
-        <input type="text" id="apellido" name="apellido">
-
-        <label>Email</label>
-        <input type="text" id="email" name="email">
-
-        <label>Telefono</label>
-        <input type="text" id="telefono" name="telefono">
-
-        <label>Dni</label>
-        <input type="text" id="dni" name="dni">
-
-        <label>Contraseña</label>
-        <input type="password" id="passwd" name="passwd" required>
-
-        <label>Confirma contraseña</label>
-        <input type="password" id="cpasswd" name="cpasswd" required>
-        <span id="passwordError" style="color: red;"></span>
-
-        <input type="submit" value="Enviar">
-    </form>
+    </div>
+    
 </body>
+<footer class="foo">
+    <div class="foo-container">
+        <div class="foo-container-cont1">
+            <p><a href="home.html">Aviso Legal</a></p>
+            <p><a href="home.html">Política de Cookies</a></p>
+            <p><a href="home.html">Política de Privacidad</a></p>
+        </div>
+        <div class="foo-container-cont2">
+            <p><a href="home.html">Home</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+            <p><a href="login.html">Login</a></p>
+        </div>
+        <div class="foo-container-cont3">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+    </div>
+</footer>
 </html>
